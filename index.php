@@ -175,7 +175,7 @@ if(isset($_SESSION['loggedin'])){
                             <?php endif; ?>
                             </span>
                         </div>
-                        <div class="panel-body text-center">
+                        <div class="panel-body text-center" style="min-height:300px;max-height:300px;overflow-y: scroll";>
                             <p>
                                 <a href="product.php?product=<?php echo $recent['product_id']; ?>">
                                     <img class="img-rounded img-thumbnail" src="<?php echo 'products/'.$recent['picture'];?>" witdth="100%" height="100%"/>
@@ -253,7 +253,7 @@ if(isset($_SESSION['loggedin'])){
                             <?php endif;?>
                             </span>
                         </div>
-                        <div class="panel-body text-center">
+                        <div class="panel-body text-center" style="min-height:300px;max-height:300px;overflow-y: scroll";>
                             <p>
                                 <a class="product" data-toggle="" data-target="#product" href="product.php?product=<?php echo $pin['product_id']; ?>">
                                     <img class="img-rounded img-thumbnail" src="<?php echo 'products/'.$pin['picture'];?>" witdth="100%" height="100%"/>
@@ -302,7 +302,7 @@ if(isset($_SESSION['loggedin'])){
                             <?php endif;?>
                             </span>
                         </div>
-                        <div class="panel-body text-center">
+                        <div class="panel-body text-center" style="min-height:300px;max-height:300px;overflow-y: scroll";>
                             <p>
                                 <a class="product" data-toggle="" data-target="#product" href="product.php?product=<?php echo $product['product_id']; ?>">
                                     <img class="img-rounded img-thumbnail" src="<?php echo 'products/'.$product['picture'];?>" witdth="100%" height="100%"/>

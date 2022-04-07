@@ -7,20 +7,26 @@ body {
     width: 100%;
 }
 
+/*
 #page-wrapper {
     padding: 0 15px;
     min-height: 568px;
     background-color: #fff;
 }
 
+
 @media(min-width:768px) {
+    
     #page-wrapper {
         position: inherit;
         margin: 0 0 0 250px;
         padding: 0 30px;
         border-left: 1px solid #e7e7e7;
     }
-}
+}*/
+
+
+/*
 .navbar{
     margin-bottom: 0;
 }
@@ -83,6 +89,9 @@ body {
     left: auto;
 }
 
+*/
+
+/*
 .sidebar .sidebar-nav.navbar-collapse {
     padding-right: 0;
     padding-left: 0;
@@ -124,7 +133,9 @@ body {
 .sidebar .nav-third-level li a {
     padding-left: 52px;
 }
+*/
 
+/*
 @media(min-width:768px) {
     .sidebar {
         z-index: 1;
@@ -138,14 +149,17 @@ body {
     .navbar-top-links .dropdown-alerts {
         margin-left: auto;
     }
-}
+}*/
 
+/*
 .btn-outline {
     color: inherit;
     background-color: transparent;
     transition: all .5s;
 }
+*/
 
+/*
 .btn-primary.btn-outline {
     color: #428bca;
 }
@@ -165,7 +179,9 @@ body {
 .btn-danger.btn-outline {
     color: #d9534f;
 }
+*/
 
+/*
 .btn-primary.btn-outline:hover,
 .btn-success.btn-outline:hover,
 .btn-info.btn-outline:hover,
@@ -174,6 +190,9 @@ body {
     color: #fff;
 }
 
+*/
+
+/*
 .chat {
     margin: 0;
     padding: 0;
@@ -207,11 +226,14 @@ body {
     height: 350px;
     overflow-y: scroll;
 }
+*/
 
+/*this is used for title, recently viewed and products titles */
 .login-panel {
     margin-top: 25%;
 }
 
+/*
 .flot-chart {
     display: block;
     height: 400px;
@@ -221,7 +243,9 @@ body {
     width: 100%;
     height: 100%;
 }
+*/
 
+/*
 .dataTables_wrapper {
     position: relative;
     clear: both;
@@ -253,7 +277,9 @@ table.dataTable thead .sorting:after {
     font-family: fontawesome;
     color: rgba(50,50,50,.5);
 }
+*/
 
+/*
 .btn-circle {
     width: 30px;
     height: 30px;
@@ -282,6 +308,9 @@ table.dataTable thead .sorting:after {
     line-height: 1.33;
 }
 
+*/
+
+/*
 .show-grid [class^=col-] {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -292,12 +321,16 @@ table.dataTable thead .sorting:after {
 .show-grid {
     margin: 15px 0;
 }
+*/
 
+/*
 .huge {
     font-size: 40px;
     word-wrap: break-word;
 }
+*/
 
+/*
 .panel-green {
     border-color: #5cb85c;
 }
@@ -318,6 +351,7 @@ table.dataTable thead .sorting:after {
 .panel-green a:hover {
     color: #3d8b3d;
 }
+
 
 .panel-red {
     border-color: #d9534f;
@@ -355,11 +389,33 @@ table.dataTable thead .sorting:after {
     color: #df8a13;
 }
 
+*/
+
+/*
 .time-picker-group {
     margin-right : 5px;
 }
+*/
 
+/*
 .img-box{
     text-align: center;
     padding: 20px;
 }
+
+*/
+.panel-heading {
+    word-wrap: break-word;
+}
+
+.slidedown .glyphicon,
+.chat .glyphicon {
+    margin-right: 5px;
+}
+
+
+.panel {
+    min-height: 300px;
+    max-height: 300px;
+  }
+
