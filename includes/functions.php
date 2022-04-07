@@ -228,7 +228,7 @@ function getIdFromEmail($email){
 function deleteProduct($pid, $email){ 
     $uid = getIdFromEmail($email);
     $link = connect();
-    $query = 'delete from products where product_id = "'.$pid.'" && user_id = "'.$uid[0].'"';
+    $query = 'delete from products where product_id = "'.$pid.'" && user_id = "'.$uid.'"';
     $success = mysqli_query($link, $query);
     
     mysqli_close($link);
