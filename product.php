@@ -54,7 +54,7 @@ if($product){
                         </a>
                     </p>
                 </div>
-                <div class="panel panel-info">
+                <div class="panel panel-info product-view">
                     <div class="panel-heading">
                         <?php echo $product['title']; ?>
                     </div>
