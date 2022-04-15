@@ -83,11 +83,13 @@ foreach($cookies as $cookie){
 }
 
 //comment out below for FIFO(above), otherwise it's user first, then price
+/*
 $firstname = array_column($recents, 'firstname');
 $lastname = array_column($recents, 'lastname');
 $price = array_column($recents, 'price');
     
 array_multisort($lastname, SORT_ASC, $firstname, SORT_ASC, $price, SORT_DESC, $recents);
+*/
 
 //check for search
 if(isset($_GET['search'])){
@@ -162,7 +164,7 @@ if(isset($_SESSION['loggedin'])){
         <div class="row">
             <?php foreach($recents as $recent): ?>
                 <div class="col-md-3">
-                    <div class="panel panel-info">
+                    <div class="panel panel-default">
                         <div class="panel-heading">
                                 <?php echo $recent['title']; ?>
                             <span class="pull-right text-muted">
@@ -195,7 +197,7 @@ if(isset($_SESSION['loggedin'])){
                             <?php endif; ?>
                         </div>
                         <div class="panel-footer ">
-                            <span><a href=<?php echo 'mailto:'.$recent['email']?> data-toggle="tooltip" title="Email seller"><i class="fa fa-envelope"></i><?php echo $recent['firstname'] .' '. $recent['lastname']; ?></a></span>
+                            <span><a href=<?php echo 'mailto:' .$recent['email']?> data-toggle="tooltip" title="Email seller"><i class="fa fa-envelope"></i><?php echo ' '. $recent['firstname'] .' '. $recent['lastname']; ?></a></span>
                             <span class="pull-right">$<?php echo $recent['price']; ?></span>
                         </div>
                     </div>
@@ -223,7 +225,6 @@ if(isset($_SESSION['loggedin'])){
                             </div>
                         </div>
                         <input type="submit" class="btn btn-default" value="Search"/>
-                        <button class="btn btn-default" data-toggle="tooltip" title="Shareable Link!"><i class="fa fa-share"></i></button>
                     </form>
                 <br/>
             </div>
@@ -273,7 +274,7 @@ if(isset($_SESSION['loggedin'])){
                             <?php endif; ?>
                         </div>
                         <div class="panel-footer ">
-                            <span><a href="<?php echo 'mailto:'.$pin['email']?>" data-toggle="tooltip" title="Email seller"><i class="fa fa-envelope"></i><?php echo $pin['firstname'] .' '. $pin['lastname']; ?></a></span>
+                            <span><a href="<?php echo 'mailto:'.$pin['email']?>" data-toggle="tooltip" title="Email seller"><i class="fa fa-envelope"></i><?php echo ' '. $pin['firstname'] .' '. $pin['lastname']; ?></a></span>
                             <span class="pull-right">$<?php echo $pin['price']; ?></span>
                         </div>
                     </div>
@@ -282,7 +283,7 @@ if(isset($_SESSION['loggedin'])){
             <?php endif; ?>
             <?php foreach($products as $product): ?>
                 <div class="col-md-3">
-                    <div class="panel panel-info">
+                    <div class="panel panel-default">
                         <div class="panel-heading">
                             <?php if(isset($_SESSION['loggedin'])): ?>
                                 <a class="" href="pin.php?pid=<?php echo $product['product_id'];?>&owner=<?php echo $product['user_id']; ?>" data-toggle="tooltip" title="Pin item">
@@ -322,7 +323,7 @@ if(isset($_SESSION['loggedin'])){
                             <?php endif; ?>
                         </div>
                         <div class="panel-footer ">
-                            <span><a href="<?php echo 'mailto:'.$product['email']?>" data-toggle="tooltip" title="Email seller"><i class="fa fa-envelope"></i><?php echo $product['firstname'] .' '. $product['lastname']; ?></a></span>
+                            <span><a href="<?php echo 'mailto:'.$product['email']?>" data-toggle="tooltip" title="Email seller"><i class="fa fa-envelope"></i><?php echo ' '. $product['firstname'] .' '. $product['lastname']; ?></a></span>
                             <span class="pull-right">$<?php echo $product['price']; ?></span>
                         </div>
                     </div>
@@ -459,41 +460,6 @@ if(isset($_SESSION['loggedin'])){
             </div>
         </div><!-- /.modal-content -->
     </form>
-</div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-
-
-<div id="product" class="modal fade" tabindex="-1" role="dialog">
-<div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-body">
-                <div class="col-md-offset-3 col-md-6">
-                    <div>
-                        <p>
-                            <a class="btn btn-default" href="index.php">
-                                <i class="fa fa-arrow-left"></i>
-                            </a>
-                        </p>
-                    </div>
-                    <div class="panel panel-info">
-                        <div class="panel-heading">
-                            Noodles
-                        </div>
-                        <div class="panel-body text-center">
-                            <p>
-                                <img class="img-rounded img-thumbnail" src="products/f88008dc63a67983e5824dafa0935662.png"/>
-                            </p>
-                            <p class="text-muted text-justify">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et accumsan mauris, non faucibus massa. Maecenas ac dolor aliquet, euismod nisl ut, congue quam.
-                            </p>
-                        </div>
-                        <div class="panel-footer ">
-                            <span><a href=""><i class="fa fa-envelope"></i> Alex Akins</a></span>
-                            <span class="pull-right">$11.99</span>
-                    </div>
-                </div>
-            </div>
-        </div><!-- /.modal-content -->
 </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 

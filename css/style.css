@@ -1,7 +1,6 @@
 body {
-    background-color: pink;
-    //background-color: #f8f8f8;
-    /*background-image: url("../img/greyzz.png");*/ 
+    background-color: #f8f8f8;
+    background-image: url("../img/greyzz.png");
 }
 
 #wrapper {
@@ -9,14 +8,25 @@ body {
 }
 
 .panel-body {
-    min-height:260px;
-    max-height:260px;
+    min-height: 350px;
+    max-height: 350px;
     overflow-y: scroll;
 }
 
-.product-view > .panel-body{
-    min-height:500px;
-    max-height:500px;
-    overflow-y: scroll;
+.panel-body::-webkit-scrollbar {
+    display: none;
+}
+
+img {
+    min-height: 270px;
+    max-height: 270px;
+}
+
+.fa {
+    color: #4d4f4f;
+}
+
+.panel-footer a {
+    color: #1c1c1c;
 }
 
